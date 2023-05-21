@@ -1,0 +1,45 @@
+div {
+	perspective: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+	transform: rotateY(360deg);
+	//animation: rotateAnimation 20s linear infinite;
+}
+
+@keyframes rotateAnimation {
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+// .gallery{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 2rem;
+// }
+
+.about{
+  padding-top: 8rem;
+}
+
+.section_title{
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+}
