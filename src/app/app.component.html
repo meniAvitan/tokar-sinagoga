@@ -1,21 +1,49 @@
+<!-- <router-outlet></router-outlet> -->
+<div class="loader-wrapper" *ngIf="showLoader">
+  <div class="loader"></div>
+</div>
+
+
 <app-nav-bar></app-nav-bar>
 
-<section class="about">
-  <h2 class="section_title">קצת עלינו...</h2>
-  <app-about></app-about>
-</section>
+<main>
+  <section class="primary">
+    <app-primary></app-primary>
+  </section>
+  <section class="about">
+    <div class="title_wrapper">
+      <h2 class="section_title">אודות בית הכנסת</h2>
+    </div>
 
-<!-- <div>
-  <img src="../assets/images/crown.png" class="square" />
-</div> -->
+    <app-about></app-about>
+  </section>
 
-<section class="gallery">
-  <h2 class="section_title">קצת מההכנות...</h2>
-  <app-gallery></app-gallery>
-</section>
 
-<section>
-  <h2 class="section_title">פינת הנצחה</h2>
-  <app-memoration></app-memoration>
-</section>
+  <section class="gallery">
+    <div class="title_wrapper">
+      <h2 class="section_title">גלריה</h2>
+      <p class="sub_title">תמונות מבית הכנסת / הבנייה  / הכנסת ספר תורה / תפילות</p>
+    </div>
 
+
+    <app-gallery></app-gallery>
+  </section>
+
+  <section class="memoration">
+    <div class="title_wrapper">
+      <h2 class="section_title">מורשת והנצחה</h2>
+      <p class="sub_title">בית הכנסת מהווה כמרכז למורשת והנצחה לשושלת היוחסין המפוארת של משפחות טוקאר ובכר, והפעילות התורנית והחברתית שבו, מוקדשת לזכרם ולעילוי נשמתם.
+        בני המשפחות רשומים על גבי לוח הנצחה בכותלו המערבי של בית הכנסת.
+        </p>
+    </div>
+
+    <app-memoration></app-memoration>
+  </section>
+
+
+
+
+  <section class="footer">
+    <app-footer></app-footer>
+  </section>
+</main>

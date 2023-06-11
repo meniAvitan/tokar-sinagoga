@@ -1,8 +1,19 @@
 <div class="card_container">
-  <img class="image" src="{{image}}" alt="">
+  <img loading="lazy" class="image" src="{{ image }}" alt="" />
   <div class="title">
-    <h3>{{title}}</h3>
+    <h3>{{ title }}</h3>
   </div>
+  <div class="footer_card">
+    <a href="https://www.matara.pro/nedarimplus/online/?mosad=7009290" target="_blank">
+      <button class="donate_btn">להנצחה</button>
+    </a>
 
-  <h3 class="price">{{price}} ₪</h3>
+    <div class="container">
+      <span class="highlight-container"
+        ><span class="highlight"
+          ><h3 class="price">{{ price }} ₪</h3></span
+        ></span
+      >
+    </div>
+  </div>
 </div>

@@ -1,0 +1,79 @@
+.footer{
+  background: #fff;
+  padding:30px 0px;
+  text-align:center;
+  z-index: 2;
+  opacity: 0.85;
+  position: relative;
+  }
+ .border-top{
+    width: 100%;
+    height: 1rem;
+    background-color: #C8A25C;
+    margin-top: 1rem;
+  }
+
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:#C8A25C;
+  font-size:1em;
+  }
+
+  .footer .row a{
+  text-decoration:none;
+  color: #000;
+  transition:0.5s;
+  }
+  .fa-phone{
+    color: #444bc2;
+  }
+  .fa-whatsapp{
+    color: #25d366;
+  }
+
+  .footer .row a:hover{
+  color:#C8A25C;
+  }
+
+  .footer .row ul{
+  width:100%;
+  }
+
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+.map{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+.contact_tel a{
+  padding: 0.5rem;
+}
+
+
+  @media (max-width:720px){
+  .footer{
+  padding:5%;
+  word-break: break-word;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  .map{
+    position: relative;
+  }
+  }

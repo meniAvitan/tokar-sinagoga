@@ -1,0 +1,97 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider {
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.slide.next-btn{
+  transform: translateX(100%);
+}
+.slide.prev-btn{
+  transform: translateX(-100%);
+}
+.next-btn{
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+.prev-btn{
+  position: absolute;
+  left: 5%;
+  top: 40%;
+}
+
+.prev-btn,
+.next-btn {
+
+  background-color: rgba(16, 15, 15, 0.454);
+border-radius: 50%;
+border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+
+.paginator {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.page {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.page.active {
+  background-color: #555;
+}
+

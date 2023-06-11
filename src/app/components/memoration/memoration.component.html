@@ -1,5 +1,7 @@
 
-<div class="container">
+
+
+<div class="container" id="memoration">
   <div class="holder">
     <div class="candle">
       <div class="blinking-glow"></div>
@@ -8,27 +10,34 @@
       <div class="flame"></div>
     </div>
   </div>
-<div class="memo_container">
-  <div class="memo_img one">
-    <img src="../../../assets/images/memoration/memory (1).jpeg" />
+  <div class="memo_container">
+    <div class="memo_img">
+       <img loading="lazy" src="../../../assets/images/memoration/memory (1).png" />
+    </div>
+  </div>
+  <app-family-gallery></app-family-gallery>
+  <div class="title_wrapper">
+    <h2 class="section_title">תרומות</h2>
+    <p class="sub_title">לתורמים תנתן אפשרות להנצחה מיוחדת</p>
+  </div>
+  <div class="cards_container">
+    <div *ngFor="let card of cards" class="cards">
+      <app-card
+        [image]="card.image"
+        [title]="card.title"
+        [price]="card.price"
+      ></app-card>
+    </div>
   </div>
 
-  <div class="memo_img tow">
-    <img src="../../../assets/images/memoration/memory (2).jpeg" />
-  </div>
-
-  <div class="memo_img tree">
-    <img src="../../../assets/images/memoration/memory (3).jpeg" />
+  <div class="donate">
+    <h2>לתרומות</h2>
+    <h3>
+      עמותת אלחי
+      <br />
+      בנק 12 סניף 714
+      <br />
+      מספר חשבון : 343430
+    </h3>
   </div>
 </div>
-
-<div class="cards_container">
-  <div *ngFor="let card of cards" class="cards">
-    <app-card [image]="card.image" [title]="card.title" [price]="card.price"></app-card>
-  </div>
-</div>
-
-
-
-</div>
-

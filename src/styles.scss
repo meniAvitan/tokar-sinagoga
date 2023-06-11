@@ -1,5 +1,6 @@
 
 
+
 /* You can add global styles to this file, and also import other style files */
 *{
 //   font-family: 'Open Sans', sans-serif;
@@ -15,7 +16,62 @@ font-family: 'Heebo', sans-serif;
 }
 
 body{
-  background: rgb(188, 208, 197);
-background: linear-gradient(3deg, rgb(90, 134, 109) 0%, rgb(193, 203, 192) 55%);
+  background-image: url('./assets//images/background.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+//   background: rgb(188, 208, 197);
+// background: linear-gradient(3deg, rgb(90, 134, 109) 0%, rgb(193, 203, 192) 55%);
 overflow-x: hidden;
 }
+
+
+.title_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.section_title:after,.section_title:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #C8A25C;
+  border-top: 2px solid #C8A25C;
+  height: 8px;
+}
+
+section{
+display: flex;
+flex-direction: column;
+}
+.section_title {
+  text-align: center;
+      font-size:30px; font-weight:300; color:#222; letter-spacing:1px;
+
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+      width: 60%;
+  }
+  .sub_title{
+    word-break: initial;
+    text-align: center;
+    width: 50%;
+    font-size: 150%;
+  }
+  @media  (max-width: 768px) {
+    .section_title {
+      width: 90%;
+    }
+    .sub_title{
+      width: 90%;
+      font-size: 100%;
+    }
+  }

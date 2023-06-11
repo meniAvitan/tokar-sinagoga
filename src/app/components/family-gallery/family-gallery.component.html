@@ -1,0 +1,18 @@
+
+<div class="container">
+
+
+<div class="slider">
+  <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': currentIndex === i}">
+    <img loading="lazy" [src]="image.src" [alt]="image.alt">
+  </div>
+</div>
+
+<div class="controls">
+  <button class="prev-btn" (click)="prevSlide()">&#8249;</button>
+  <div class="paginator">
+    <span class="page" *ngFor="let image of images; let i = index" [ngClass]="{'active': currentIndex === i}" (click)="goToSlide(i)"></span>
+  </div>
+  <button class="next-btn" (click)="nextSlide()">&#8250;</button>
+</div>
+</div>
